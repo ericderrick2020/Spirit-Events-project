@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- WEBSITE TITLE -->
+    <title>Calendar | Spirit Events</title>
+    <!-- FONT FAMILIES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ICON LINKS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- LINKS FOR CSS -->
+    <link rel="stylesheet" href="../assets/css/calendar.css">
+    <link rel="stylesheet" href="../assets/css/navbarandfooter.css">
+</head>
+
+<body>
+    <nav class="navbar1">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="">
+        </div>
+        <div class="link-to-pages">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </div>
+        <div class="profile-side">
+            <a href="login-page.html" target="_blank"><button>Login</button></a>
+            <a href="signup.html" target="_blank"><button>Sign up</button></a>
+        </div>
+    </nav>
+    <!-- HERO SECTION START -->
+    <main>
+        <div class="container" id="calendar-container">
+            <h1>Event Calendar</h1>
+
+            <div class="header">
+                <button id="prev-month">Previous</button>
+                <h2 id="month-year"></h2>
+                <button id="next-month">Next</button>
+            </div>
+
+            <div id="calendar" class="calendar">
+                <table id="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- calendar dates will be generated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Upcoming Events</h2>
+            <ul id="event-list" class="event-list">
+                <!-- EVENTS TO BE ADDED dynamically -->
+                 <h1>Coming Soon!!!</h1>
+            </ul>
+        </div>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer-container">
+            <div class="side-1">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="crew.html">Careers</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="#values">values</a></li>
+                </ul>
+            </div>
+            <div class="side-1">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="helpcenter.html">Help Center</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="side-1">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#calendar-container">Calendar</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                </ul>
+
+            </div>
+            <div class="side-2">
+                <h3>Follow Us</h3>
+                <div class="media">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-credits">
+            <p>&copy;
+                <span id="date"></span> SPIRIT EVENTS. All rights reserved.
+            </p>
+            <span>Created by Nahabwe Derrick Eric</span>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- JAVASCRIPT LINKS -->
+    <script src="../assets/js/navbarandfooter.js"></script>
+    <script src="../assets/js/calendar.js"></script>
+
+
+</body>
+
+</html>
